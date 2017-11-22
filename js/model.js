@@ -10,7 +10,7 @@
 
   model.init = function() {
       // model.updateLocalStore( jsonData );
-      return model.randomizeVerb();
+      model.randomizeVerb();
       // return randomVerb;
   }
 
@@ -41,7 +41,6 @@
 
       this.SixthPP = randomVerb.SixthPP;
 
-      return randomVerb;
     }
 
   /**

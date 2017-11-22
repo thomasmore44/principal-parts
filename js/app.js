@@ -6,10 +6,10 @@
 var principalPartsQuiz = {
 
     init: function() {
-      var randomVerb = model.init();
-      console.log(randomVerb);
-      controller.init(randomVerb);
-      view.init(randomVerb);
+      model.init();
+      console.log(model.verb);
+      controller.init();
+      view.init();
       // console.log(helpers.get1stPP());
     }
   }

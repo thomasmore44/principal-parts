@@ -29,18 +29,15 @@
       this.numWrong = 0;
       this.verb = randomVerb;
 
-      this.FirstPP = randomVerb.FirstPP;
-
-      this.SecondPP = randomVerb.SecondPP;
-
-      this.ThirdPP = randomVerb.ThirdPP;
-
-      this.FourthPP = randomVerb.FourthPP;
-
-      this.FifthPP = randomVerb.FifthPP;
-
-      this.SixthPP = randomVerb.SixthPP;
-
+      var answer1 = model.verb.FirstPP;
+      var answer2 = model.verb.SecondPP;
+      var answer3 = model.verb.ThirdPP;
+      var answer4 = model.verb.FourthPP;
+      var answer5 = model.verb.FifthPP;
+      var answer6 = model.verb.SixthPP;
+      var allAnswers = [];
+      allAnswers.push( answer1, answer2, answer3, answer4, answer5, answer6 );
+      this.allAnswers = allAnswers;
     }
 
   /**

@@ -1,0 +1,100 @@
+/*
+* Stylesheet in Progress for Principal Parts
+*
+*
+*
+*/
+
+body {
+  font-family: 'Cardo', serif;
+}
+
+img#gamma-logo {
+    margin-top: 15px;
+}
+
+#submit {
+  padding: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+#submit:hover {
+  color: blue;
+  background-color: white;
+}
+
+#submit:active, :focus {
+  outline: none;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset  {
+  /*max-width: 1250px;*/
+  background-color: #efefef;
+  padding: 1.5em;
+}
+
+input[type=text] {
+  flex: 1;
+  min-width: 100px;
+  margin-left: .3em;
+  margin-right: .3em;
+  border: none;
+  background: transparent;
+  font-size: 1.2em;
+  letter-spacing: 0.1e;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  padding-bottom: 0;
+  box-shadow: none;
+  transition: border 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.PrincPart {
+  flex: 1;
+  max-width: 120px;
+  margin-left: .3em;
+  margin-right: .3em;
+  border: none;
+  background: transparent;
+  font-size: 1.2em;
+  letter-spacing: 0.1e;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  padding-bottom: 0;
+  box-shadow: none;
+  transition: border 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.PrincPartCorrect  {
+  border: 2px solid green;
+  background: rgba(107,142,35, 0.5);
+  padding: 5px 15px;
+  color: green;
+}
+
+.PrincPartWrong  {
+  border: 2px solid red;
+  background: rgba(240,128,128, 0.7);
+  padding: 5px 15px;
+  color: red;
+}
+
+input[type=text]:active {
+  border: none;
+  box-shadow: none;
+}
+input[type=text]:focus{
+  border: none;
+  border-bottom: 2px solid red;
+  outline: none;
+
+}

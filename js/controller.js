@@ -23,16 +23,6 @@
     controller.userSubmitQuiz = function() {
       var sbmt = helpers.getSubmitButton();
       sbmt.addEventListener('click', controller.getUserInput, false);
-
-      var answer1 = model.verb.FirstPP;
-      var answer2 = model.verb.SecondPP;
-      var answer3 = model.verb.ThirdPP;
-      var answer4 = model.verb.FourthPP;
-      var answer5 = model.verb.FifthPP;
-      var answer6 = model.verb.SixthPP;
-      var allAnswers = [];
-      allAnswers.push( answer1, answer2, answer3, answer4, answer5, answer6 );
-      this.allAnswers = allAnswers;
     }
 
 
@@ -56,11 +46,17 @@
           this.stuff = allInputs;
           // console.log(this.stuff);
 
-          var answersArray = controller.allAnswers;
+          var answersArray = model.allAnswers;
 
-          for (var i = 0, max = answersArray.length; i < max; i++) {
+          for (var i = 1, max = 6; i < max; i++) {
 
             var cleanInput = allInputs[i].trim();
+            // if ("" === cleanInput) {
+            //   return cleanInput = "empty";
+            // }
+            // if ("" === answersArray[i]) {
+            //   return answersArray[i] = "empty";
+            // }
             // console.log(cleanInput);
             var checkedAnswer = (cleanInput === answersArray[i]);
 

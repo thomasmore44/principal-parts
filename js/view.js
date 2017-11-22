@@ -9,8 +9,8 @@
 
   view.init = function(){
         view.showVerb();
-        var fieldSet = helpers.getFieldSet();
-        var FirstPP = helpers.getFirstPP();
+        // var fieldSet = helpers.getFieldSet();
+        // var FirstPP = helpers.getFirstPP();
   };
 
 
@@ -39,10 +39,10 @@ view.showVerb = function() {
 
 view.correctAnswer = function(num) {
   var fieldSet = helpers.getFieldSet();
-  if (num == 0) {
+  if (num == 1) {
     model.numCorrect += 1;
     var FirstPP = helpers.getFirstPP().value;
-    var label1 = helpers.getAllLabels()[num];
+    var label1 = helpers.getAllLabels()[0];
     var answerSpan1 = helpers.answerSpan1();
 
     answerSpan1.className = ' PrincPartCorrect';
@@ -50,7 +50,7 @@ view.correctAnswer = function(num) {
     fieldSet.removeChild( label1 );
     fieldSet.appendChild( answerSpan1 );
 
-  } else if (num == 1) {
+  } else if (num == 2) {
     model.numCorrect += 1;
     var SecondPP = helpers.getSecondPP().value;
     var label2 = helpers.getAllLabels()[0];
@@ -61,7 +61,7 @@ view.correctAnswer = function(num) {
     fieldSet.removeChild( label2 );
     fieldSet.appendChild( answerSpan2 );
 
-  } else if (num == 2) {
+  } else if (num == 3) {
     model.numCorrect += 1;
 
     var ThirdPP = helpers.getThirdPP().value;
@@ -72,7 +72,7 @@ view.correctAnswer = function(num) {
     fieldSet.removeChild( label3 );
 
     fieldSet.appendChild( answerSpan3 );
-  } else if (num == 3) {
+  } else if (num == 4) {
     model.numCorrect += 1;
 
     var FourthPP = helpers.getFourthPP().value;
@@ -84,7 +84,7 @@ view.correctAnswer = function(num) {
 
     fieldSet.appendChild( answerSpan4 );
 
-  } else if (num == 4) {
+  } else if (num == 5) {
     model.numCorrect += 1;
 
     var FifthPP = helpers.getFifthPP().value;
@@ -96,7 +96,7 @@ view.correctAnswer = function(num) {
 
     fieldSet.appendChild( answerSpan5 );
 
-  } else if (num == 5) {
+  } else if (num == 6) {
     model.numCorrect += 1;
 
     var SixthPP = helpers.getSixthPP().value;
@@ -115,7 +115,7 @@ view.correctAnswer = function(num) {
 
 view.wrongAnswer = function(num) {
   var fieldSet = helpers.getFieldSet();
-  if (num == 0) {
+  if (num == 1) {
     model.numWrong += 1;
     var FirstPP = helpers.getFirstPP().value;
     var label1 = helpers.getAllLabels()[0];
@@ -126,8 +126,7 @@ view.wrongAnswer = function(num) {
     fieldSet.removeChild( label1 );
     fieldSet.appendChild( answerSpan1 );
 
-    fieldSet.appendChild( answerSpan1 );
-  } else if (num == 1) {
+  } else if (num == 2) {
     model.numWrong += 1;
 
     var SecondPP = helpers.getSecondPP().value;
@@ -138,9 +137,7 @@ view.wrongAnswer = function(num) {
     answerSpan2.innerHTML = SecondPP;
     fieldSet.removeChild( label2 );
     fieldSet.appendChild( answerSpan2 );
-
-    fieldSet.appendChild( answerSpan2 );
-  } else if (num == 2) {
+  } else if (num == 3) {
     model.numWrong += 1;
     var ThirdPP = helpers.getThirdPP().value;
     var label3 = helpers.getAllLabels()[0];
@@ -150,9 +147,7 @@ view.wrongAnswer = function(num) {
     answerSpan3.innerHTML = ThirdPP;
     fieldSet.removeChild( label3 );
     fieldSet.appendChild( answerSpan3 );
-
-    fieldSet.appendChild( answerSpan3 );
-  } else if (num == 3) {
+  } else if (num == 4) {
     model.numWrong += 1;
 
     var FourthPP = helpers.getFourthPP().value;
@@ -164,9 +159,7 @@ view.wrongAnswer = function(num) {
     fieldSet.removeChild( label4 );
     fieldSet.appendChild( answerSpan4 );
 
-    fieldSet.appendChild( answerSpan4 );
-
-  } else if (num == 4) {
+  } else if (num == 5) {
     model.numWrong += 1;
 
     var FifthPP = helpers.getFifthPP().value;
@@ -177,9 +170,7 @@ view.wrongAnswer = function(num) {
     answerSpan5.innerHTML = FifthPP;
     fieldSet.removeChild( label5 );
     fieldSet.appendChild( answerSpan5 );
-
-    fieldSet.appendChild( answerSpan5 );
-  } else if (num == 5) {
+  } else if (num == 6) {
     model.numWrong += 1;
 
     var SixthPP = helpers.getSixthPP().value;

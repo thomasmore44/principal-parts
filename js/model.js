@@ -10,8 +10,7 @@
 
   model.init = function() {
       // model.updateLocalStore( jsonData );
-      return model.randomizeVerb();
-      // return randomVerb;
+      model.randomizeVerb();
   }
 
   /**
@@ -29,19 +28,17 @@
       this.numWrong = 0;
       this.verb = randomVerb;
 
-      this.FirstPP = randomVerb.FirstPP;
-
-      this.SecondPP = randomVerb.SecondPP;
-
-      this.ThirdPP = randomVerb.ThirdPP;
-
-      this.FourthPP = randomVerb.FourthPP;
-
-      this.FifthPP = randomVerb.FifthPP;
-
-      this.SixthPP = randomVerb.SixthPP;
-
-      return randomVerb;
+      var english = this.verb.English;
+      var answer1 = this.verb.FirstPP;
+      var answer2 = this.verb.SecondPP;
+      var answer3 = this.verb.ThirdPP;
+      var answer4 = this.verb.FourthPP;
+      var answer5 = this.verb.FifthPP;
+      var answer6 = this.verb.SixthPP;
+      var allAnswers = [];
+      allAnswers.push( english, answer1, answer2, answer3, answer4, answer5, answer6 );
+      this.allAnswers = allAnswers;
+      console.log(allAnswers);
     }
 
   /**

@@ -25,6 +25,8 @@
     model.randomizeVerb = function() {
       var verbHorde = model.getLocalStore();
       var randomVerb = verbHorde[Math.floor(Math.random()*verbHorde.length)];
+      this.numCorrect = 0;
+      this.numWrong = 0;
       this.verb = randomVerb;
 
       this.FirstPP = randomVerb.FirstPP;

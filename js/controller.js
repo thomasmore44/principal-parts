@@ -57,6 +57,7 @@
           // console.log(this.stuff);
 
           var answersArray = controller.allAnswers;
+
           for (var i = 0, max = answersArray.length; i < max; i++) {
 
             var cleanInput = allInputs[i].trim();
@@ -70,6 +71,9 @@
               view.wrongAnswer([i]);
             }
           };
+
+          console.log("Correct: " + model.numCorrect);
+          console.log("Wrong: " + model.numWrong);
 
 
     }

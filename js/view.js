@@ -11,8 +11,6 @@
         view.showVerb();
         var fieldSet = helpers.getFieldSet();
         var FirstPP = helpers.getFirstPP();
-        // console.log(fieldSet.childNodes);
-        // return randomVerb;
   };
 
 
@@ -37,77 +35,74 @@ view.showVerb = function() {
   *
   */
 
+
+
 view.correctAnswer = function(num) {
-  //  console.log( num + " is absolutely correct!");
   var fieldSet = helpers.getFieldSet();
   if (num == 0) {
+    model.numCorrect += 1;
     var FirstPP = helpers.getFirstPP().value;
     var label1 = helpers.getAllLabels()[num];
     var answerSpan1 = helpers.answerSpan1();
 
     answerSpan1.className = ' PrincPartCorrect';
-    // console.log(FirstPP);
     answerSpan1.innerHTML = FirstPP;
     fieldSet.removeChild( label1 );
     fieldSet.appendChild( answerSpan1 );
 
   } else if (num == 1) {
-
-
+    model.numCorrect += 1;
     var SecondPP = helpers.getSecondPP().value;
     var label2 = helpers.getAllLabels()[0];
     var answerSpan2 = helpers.answerSpan2();
 
     answerSpan2.className = ' PrincPartCorrect';
-    // console.log(SecondPP);
     answerSpan2.innerHTML = SecondPP;
     fieldSet.removeChild( label2 );
     fieldSet.appendChild( answerSpan2 );
 
   } else if (num == 2) {
+    model.numCorrect += 1;
 
-    // var fieldSet = helpers.getFieldSet();
     var ThirdPP = helpers.getThirdPP().value;
     var label3 = helpers.getAllLabels()[0];
     var answerSpan3 = helpers.answerSpan3();
     answerSpan3.className = ' PrincPartCorrect';
-    // console.log(ThirdPP);
     answerSpan3.innerHTML = ThirdPP;
     fieldSet.removeChild( label3 );
 
     fieldSet.appendChild( answerSpan3 );
   } else if (num == 3) {
+    model.numCorrect += 1;
 
-    // var fieldSet = helpers.getFieldSet();
     var FourthPP = helpers.getFourthPP().value;
     var label4 = helpers.getAllLabels()[0];
     var answerSpan4 = helpers.answerSpan4();
     answerSpan4.className = ' PrincPartCorrect';
-    console.log(FourthPP);
     answerSpan4.innerHTML = FourthPP;
     fieldSet.removeChild( label4 );
 
     fieldSet.appendChild( answerSpan4 );
 
   } else if (num == 4) {
-    // console.log("Correct Fifth Principal Part");
+    model.numCorrect += 1;
+
     var FifthPP = helpers.getFifthPP().value;
     var label5 = helpers.getAllLabels()[0];
     var answerSpan5 = helpers.answerSpan5();
     answerSpan5.className = ' PrincPartCorrect';
-    console.log(FifthPP);
     answerSpan5.innerHTML = FifthPP;
     fieldSet.removeChild( label5 );
 
     fieldSet.appendChild( answerSpan5 );
 
   } else if (num == 5) {
-    // console.log("Correct Sixth Principal Part");
+    model.numCorrect += 1;
+
     var SixthPP = helpers.getSixthPP().value;
     var label6 = helpers.getAllLabels()[0];
     var answerSpan6 = helpers.answerSpan6();
     answerSpan6.className = ' PrincPartCorrect';
-    console.log(SixthPP);
     answerSpan6.innerHTML = SixthPP;
     fieldSet.removeChild( label6 );
 
@@ -119,28 +114,81 @@ view.correctAnswer = function(num) {
 // WRONG ANSWER Function
 
 view.wrongAnswer = function(num) {
+  var fieldSet = helpers.getFieldSet();
   if (num == 0) {
-    // console.log("WRONG First Principal Part");
+    model.numWrong += 1;
     var FirstPP = helpers.getFirstPP().value;
-    var label1 = helpers.getAllLabels()[num];
+    var label1 = helpers.getAllLabels()[0];
     var answerSpan1 = helpers.answerSpan1();
 
     answerSpan1.className = ' PrincPartWrong';
-    // console.log(FirstPP);
     answerSpan1.innerHTML = FirstPP;
     fieldSet.removeChild( label1 );
     fieldSet.appendChild( answerSpan1 );
 
-    fieldSet.appendChild( answerSpan6 );
+    fieldSet.appendChild( answerSpan1 );
   } else if (num == 1) {
-    console.log("WRONG Second Principal Part");
+    model.numWrong += 1;
+
+    var SecondPP = helpers.getSecondPP().value;
+    var label2 = helpers.getAllLabels()[0];
+    var answerSpan2 = helpers.answerSpan2();
+
+    answerSpan2.className = ' PrincPartWrong';
+    answerSpan2.innerHTML = SecondPP;
+    fieldSet.removeChild( label2 );
+    fieldSet.appendChild( answerSpan2 );
+
+    fieldSet.appendChild( answerSpan2 );
   } else if (num == 2) {
-    console.log("WRONG Third Principal Part");
+    model.numWrong += 1;
+    var ThirdPP = helpers.getThirdPP().value;
+    var label3 = helpers.getAllLabels()[0];
+    var answerSpan3 = helpers.answerSpan3();
+
+    answerSpan3.className = ' PrincPartWrong';
+    answerSpan3.innerHTML = ThirdPP;
+    fieldSet.removeChild( label3 );
+    fieldSet.appendChild( answerSpan3 );
+
+    fieldSet.appendChild( answerSpan3 );
   } else if (num == 3) {
-    console.log("WRONG Fourth Principal Part");
+    model.numWrong += 1;
+
+    var FourthPP = helpers.getFourthPP().value;
+    var label4 = helpers.getAllLabels()[0];
+    var answerSpan4 = helpers.answerSpan4();
+
+    answerSpan4.className = ' PrincPartWrong';
+    answerSpan4.innerHTML = FourthPP;
+    fieldSet.removeChild( label4 );
+    fieldSet.appendChild( answerSpan4 );
+
+    fieldSet.appendChild( answerSpan4 );
+
   } else if (num == 4) {
-    console.log("WRONG Fifth Principal Part");
+    model.numWrong += 1;
+
+    var FifthPP = helpers.getFifthPP().value;
+    var label5 = helpers.getAllLabels()[0];
+    var answerSpan5 = helpers.answerSpan5();
+
+    answerSpan5.className = ' PrincPartWrong';
+    answerSpan5.innerHTML = FifthPP;
+    fieldSet.removeChild( label5 );
+    fieldSet.appendChild( answerSpan5 );
+
+    fieldSet.appendChild( answerSpan5 );
   } else if (num == 5) {
-    console.log("WRONG Sixth Principal Part");
+    model.numWrong += 1;
+
+    var SixthPP = helpers.getSixthPP().value;
+    var label6 = helpers.getAllLabels()[0];
+    var answerSpan6 = helpers.answerSpan6();
+
+    answerSpan6.className = ' PrincPartWrong';
+    answerSpan6.innerHTML = SixthPP;
+    fieldSet.removeChild( label6 );
+    fieldSet.appendChild( answerSpan6 );
   }
 };

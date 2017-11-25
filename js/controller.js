@@ -52,14 +52,24 @@
 
             var cleanInput = allInputs[i].trim();
             // console.log(cleanInput);
-            var checkedAnswer = (cleanInput === answersArray[i]);
-
-            if (checkedAnswer === true) {
-              view.correctAnswer([i]);
+            if ( Array.isArray(answersArray[i]) ) {
+              if ( allInputs[i].includes(cleanInput) ) {
+                view.correctAnswer([i]);
+              }
+              else {
+                view.wrongAnswer([i]);
+              }
             }
             else {
+              var checkedAnswer = (cleanInput === answersArray[i]);
+
+              if (checkedAnswer === true) {
+              view.correctAnswer([i]);
+              }
+              else {
               view.wrongAnswer([i]);
-            }
+              }
+            };
           };
 
           console.log("Correct: " + model.numCorrect);

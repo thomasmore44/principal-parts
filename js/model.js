@@ -9,7 +9,9 @@
 
 
   model.init = function() {
-      // model.updateLocalStore( jsonData );
+      model.removeLocalStore();
+      model.updateLocalStore( jsonData );
+
       model.randomizeVerb();
       // return randomVerb;
   }

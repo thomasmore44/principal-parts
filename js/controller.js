@@ -53,7 +53,7 @@
             var cleanInput = allInputs[i].trim();
             // console.log(cleanInput);
             if ( Array.isArray(answersArray[i]) ) {
-              if ( allInputs[i].includes(cleanInput) ) {
+              if ( answersArray[i].includes(cleanInput) ) {
                 view.correctAnswer([i]);
               }
               else {
@@ -65,9 +65,11 @@
 
               if (checkedAnswer === true) {
               view.correctAnswer([i]);
+              // controller.addUserPoint();
               }
               else {
               view.wrongAnswer([i]);
+              // controller.deleteUserPoint();
               }
             };
           };

@@ -186,7 +186,7 @@
    "ThirdPP": "ἔγραψα",
    "FourthPP": "γέγραφα",
    "FifthPP": "γέγραμμαι",
-   "SixthPP": "ἐγραφην"
+   "SixthPP": "ἐγράφην"
  },
  {
    "English": " show",

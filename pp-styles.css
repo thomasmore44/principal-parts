@@ -13,20 +13,22 @@ img#gamma-logo {
     margin-top: 15px;
 }
 
-#submit {
+#submit, #reset-verb {
   padding: 15px;
-  margin-top: 5px;
+  margin: 10px 5px;
+
   font-size: 16px;
 }
 
-#submit:hover {
+#submit:hover, #reset-verb:hover {
   color: blue;
   background-color: white;
 }
 
-#submit:active, :focus {
+#submit:active, :focus, #reset-verb:active, :focus {
   outline: none;
 }
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -35,7 +37,7 @@ img#gamma-logo {
 }
 
 fieldset  {
-  /*max-width: 1250px;*/
+  max-width: 1300px;
   background-color: #efefef;
   padding: 1.5em;
 }

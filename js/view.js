@@ -10,7 +10,7 @@
   view.init = function(){
         view.showVerb();
         var fieldSet = helpers.getFieldSet();
-        var FirstPP = helpers.getFirstPP();
+        // var FirstPP = helpers.getFirstPP();
   };
 
 
@@ -24,6 +24,12 @@ view.showVerb = function() {
 
     var english = model.verb.English;
 
+    var fieldSet = helpers.createAnswerSpans();
+    var quizBody = helpers.getQuizBody();
+
+    quizBody.removeChild( fieldSet );
+    quizBody.appendChild( fieldSet );
+
     var quizTitle = helpers.quizTitle();
     quizTitle.innerHTML = english;
 
@@ -35,9 +41,6 @@ view.showVerb = function() {
   *  Functions for correct and incorrect answers.
   *
   */
-
-
-
 view.correctAnswer = function(num) {
   var fieldSet = helpers.getFieldSet();
   if (num == 0) {
@@ -68,7 +71,7 @@ view.correctAnswer = function(num) {
     var ThirdPP = helpers.getThirdPP().value;
     var label3 = helpers.getAllLabels()[0];
     var answerSpan3 = helpers.answerSpan3();
-    answerSpan3.className = ' PrincPartCorrect';
+    answerSpan3.classList.add( 'PrincPartCorrect' );
     answerSpan3.innerHTML = ThirdPP;
     fieldSet.removeChild( label3 );
 

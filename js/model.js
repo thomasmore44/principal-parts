@@ -11,7 +11,6 @@
   model.init = function() {
       model.removeLocalStore();
       model.updateLocalStore( jsonData );
-
       model.randomizeVerb();
       // return randomVerb;
   }

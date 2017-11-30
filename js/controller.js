@@ -11,9 +11,9 @@
     * Initializing Function
     *
     */
-    controller.init = function() {
-      controller.userSubmitQuiz();
-    }
+controller.init = function() {
+  controller.userSubmitQuiz();
+}
 
   /**
     *
@@ -23,6 +23,16 @@
     controller.userSubmitQuiz = function() {
       var sbmt = helpers.getSubmitButton();
       sbmt.addEventListener('click', controller.getUserInput, false);
+    }
+  /**
+    *
+    * Listens for USER to click RESET VERB
+    *
+    */
+
+    controller.userResetQuiz = function() {
+      var reset = helpers.getResetButton();
+      reset.addEventListener('click', view.resetVerb, false);
     }
 
 

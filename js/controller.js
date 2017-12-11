@@ -4,13 +4,13 @@
   *
   */
 
-  var controller = {};
+var controller = {};
 
-  /**
-    *
-    * Initializing Function
-    *
-    */
+/**
+  *
+  * Initializing Function
+  *
+  */
 controller.init = function() {
   controller.userSubmitQuiz();
 }
@@ -20,51 +20,51 @@ controller.init = function() {
     * Listens for USER to click SUBMIT
     *
     */
-    controller.userSubmitQuiz = function() {
-      var sbmt = helpers.getSubmitButton();
-      sbmt.addEventListener('click', controller.getUserInput, false);
-    }
-  /**
-    *
-    * Listens for USER to click RESET VERB
-    *
-    */
+controller.userSubmitQuiz = function() {
+  var sbmt = helpers.getSubmitButton();
+  sbmt.addEventListener('click', controller.getUserInput, false);
+}
+/**
+  *
+  * Listens for USER to click RESET VERB
+  *
+  */
 
-    controller.userResetQuiz = function() {
-      var reset = helpers.getResetButton();
-      reset.addEventListener('click', view.resetVerb, false);
-    }
+controller.userResetQuiz = function() {
+  var reset = helpers.getResetButton();
+  reset.addEventListener('click', view.resetVerb, false);
+}
 
 
-  /**
-    *
-    * Grabs the user's input from the quiz upon SUBMIT
-    *
-    */
+/**
+  *
+  * Grabs the user's input from the quiz upon SUBMIT
+  *
+  */
 
-    controller.getUserInput = function() {
+controller.getUserInput = function() {
 
-          var input1 = helpers.getFirstPP().value;
-          var input2 = helpers.getSecondPP().value;
-          var input3 = helpers.getThirdPP().value;
-          var input4 = helpers.getFourthPP().value;
-          var input5 = helpers.getFifthPP().value;
-          var input6 = helpers.getSixthPP().value;
-          var allInputs = [];
-          allInputs.push(input1, input2, input3, input4, input5, input6);
-          // console.log(allInputs);
-          this.stuff = allInputs;
-          // console.log(this.stuff);
+      var input1 = helpers.getFirstPP().value;
+      var input2 = helpers.getSecondPP().value;
+      var input3 = helpers.getThirdPP().value;
+      var input4 = helpers.getFourthPP().value;
+      var input5 = helpers.getFifthPP().value;
+      var input6 = helpers.getSixthPP().value;
+      var allInputs = [];
+      allInputs.push(input1, input2, input3, input4, input5, input6);
+      // console.log(allInputs);
+      this.stuff = allInputs;
+      // console.log(this.stuff);
 
-          var answersArray = model.allAnswers;
+      var answersArray = model.allAnswers;
 
-          for (var i = 0, max = answersArray.length; i < max; i++) {
+      for (var i = 0, max = answersArray.length; i < max; i++) {
 
-            var cleanInput = allInputs[i].trim();
-            // console.log(cleanInput);
-            if ( Array.isArray(answersArray[i]) ) {
-              if ( answersArray[i].includes(cleanInput) ) {
-                view.correctAnswer([i]);
+        var cleanInput = allInputs[i].trim();
+        // console.log(cleanInput);
+        if ( Array.isArray(answersArray[i]) ) {
+          if ( answersArray[i].includes(cleanInput) ) {
+            view.correctAnswer([i]);
               }
               else {
                 view.wrongAnswer([i]);

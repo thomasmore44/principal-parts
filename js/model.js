@@ -23,7 +23,7 @@
     * verb principal parts and the definition
     */
 
-    model.randomizeVerb = function() {
+model.randomizeVerb = function() {
       var verbHorde = model.getLocalStore();
       var randomVerb = verbHorde[Math.floor(Math.random()*verbHorde.length)];
       this.numCorrect = 0;

@@ -24,7 +24,33 @@
     */
 
 model.randomizeVerb = function() {
+
+
       var verbHorde = model.getLocalStore();
+
+      const noFourth = verbHorde.filter(function(verb) {
+        if ( "" === verb.FourthPP ) {
+          return true;
+        }
+      });
+
+      // console.table(noFourth);
+
+      const doublePrincipalParts = verbHorde.filter(function(verb) {
+        if (
+           Array.isArray(verb.FirstPP)
+        || Array.isArray(verb.SecondPP)
+        || Array.isArray(verb.ThirdPP)
+        || Array.isArray(verb.FourthPP)
+        || Array.isArray(verb.FifthPP)
+        || Array.isArray(verb.SixthPP)
+          ) {
+          return true;
+        }
+      });
+
+      // console.table(doublePrincipalParts);
+
       var randomVerb = verbHorde[Math.floor(Math.random()*verbHorde.length)];
       this.numCorrect = 0;
       this.numWrong = 0;

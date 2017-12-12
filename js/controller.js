@@ -32,7 +32,7 @@ controller.userSubmitQuiz = function() {
 
 controller.userResetQuiz = function() {
   var reset = helpers.getResetButton();
-  reset.addEventListener('click', view.resetVerb, false);
+  reset.addEventListener('click', principalPartsQuiz.init, false);
 }
 
 

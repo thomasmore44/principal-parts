@@ -9,8 +9,6 @@
 
   view.init = function(){
         view.showVerb();
-        var fieldSet = helpers.getFieldSet();
-        // var FirstPP = helpers.getFirstPP();
   };
 
 
@@ -21,13 +19,26 @@
     */
 
 view.showVerb = function() {
+    // model.randomizeVerb();
+
+    var fieldSet = helpers.getFieldSet();
+    const legendEl = document.createElement( 'legend' );
+    const spanEl = document.createElement( 'span' );
+    spanEl.id = 'quiz-title';
+    legendEl.innerHTML = 'Principal Parts of '
+
+    legendEl.appendChild(spanEl);
+    fieldSet.appendChild(legendEl);
+
+    var inputSet = helpers.createInputSpans();
+    // console.log(inputSet);
 
     var english = model.verb.English;
 
-    var fieldSet = helpers.createAnswerSpans();
+    // var fieldSet = helpers.createAnswerSpans();
     var quizBody = helpers.getQuizBody();
 
-    quizBody.removeChild( fieldSet );
+    // quizBody.removeChild( fieldSet );
     quizBody.appendChild( fieldSet );
 
     var quizTitle = helpers.quizTitle();

@@ -24,6 +24,7 @@ controller.userSubmitQuiz = function() {
   var sbmt = helpers.getSubmitButton();
   sbmt.addEventListener('click', controller.getUserInput, false);
 }
+
 /**
   *
   * Listens for USER to click RESET VERB

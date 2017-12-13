@@ -44,24 +44,24 @@ helpers.answerSpan6 = function() {
   return answerSpan6;
 }
 
-helpers.getInputs = function() {
-  var userInputs = [];
-  for (i = 1; i <= 6; i++) {
-    var input = document.createElement( 'input' );
-    input.id = "userInput" + i;
-    userInputs[i] = input;
-  }
-  return userInputs;
-}
-
-helpers.createLabels = function() {
-  var labels = [];
-    for (i = 0; i <= 5; i++) {
-      var label = document.createElement( 'label' );
-      labels.push(label[i]);
-    }
-  return labels;
-}
+// helpers.getInputs = function() {
+//   var userInputs = [];
+//   for (i = 1; i <= 6; i++) {
+//     var input = document.createElement( 'input' );
+//     input.id = "userInput" + i;
+//     userInputs[i] = input;
+//   }
+//   return userInputs;
+// }
+//
+// helpers.createLabels = function() {
+//   var labels = [];
+//     for (i = 0; i <= 5; i++) {
+//       var label = document.createElement( 'label' );
+//       labels.push(label[i]);
+//     }
+//   return labels;
+// }
 
 helpers.getAllLabels = function() {
   return document.getElementsByTagName( 'label' );

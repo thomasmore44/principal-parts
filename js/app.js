@@ -11,6 +11,5 @@ var principalPartsQuiz = {
       view.init();
     }
   }
-
-
+  
   principalPartsQuiz.init();

@@ -13,6 +13,7 @@ var controller = {};
   */
 controller.init = function() {
   controller.userSubmitQuiz();
+  controller.userResetQuiz();
 }
 
   /**

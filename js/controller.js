@@ -60,6 +60,10 @@ controller.getUserInput = function() {
 
       var answersArray = model.allAnswers;
 
+      answersArray.forEach( function(ans) {
+        
+      } );
+
       for (var i = 0, max = answersArray.length; i < max; i++) {
 
         var cleanInput = allInputs[i].trim();

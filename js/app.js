@@ -6,10 +6,10 @@
 var principalPartsQuiz = {
     init: function() {
       model.init();
-      console.log(model.verb);
+      // console.log(model.verb);
       controller.init();
       view.init();
     }
   }
-  
+
   principalPartsQuiz.init();

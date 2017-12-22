@@ -9,38 +9,44 @@ helpers.getFieldSet = function() {
 }
 
 helpers.answerSpan1 = function() {
-  var answerSpan1 = document.createElement( 'span' );
-  answerSpan1.id = 'span-PP-1';
+  var answerSpan1 = document.createElement( 'div' );
+  answerSpan1.id = 'div-PP-1';
+  answerSpan1.className = 'PrincPart';
   return answerSpan1;
 }
 
 helpers.answerSpan2 = function() {
-  var answerSpan2 = document.createElement( 'span' );
-  answerSpan2.id = 'span-PP-2';
+  var answerSpan2 = document.createElement( 'div' );
+  answerSpan2.id = 'div-PP-2';
+  answerSpan2.className = 'PrincPart';
   return answerSpan2;
 }
 
 helpers.answerSpan3 = function() {
-  var answerSpan3 = document.createElement( 'span' );
-  answerSpan3.id = 'span-PP-3';
+  var answerSpan3 = document.createElement( 'div' );
+  answerSpan3.id = 'div-PP-3';
+  answerSpan3.className = 'PrincPart';
   return answerSpan3;
 }
 
 helpers.answerSpan4 = function() {
-  var answerSpan4 = document.createElement( 'span' );
-  answerSpan4.id = 'span-PP-4';
+  var answerSpan4 = document.createElement( 'div' );
+  answerSpan4.id = 'div-PP-4';
+  answerSpan4.className = 'PrincPart';
   return answerSpan4;
 }
 
 helpers.answerSpan5 = function() {
-  var answerSpan5 = document.createElement( 'span' );
-  answerSpan5.id = 'span-PP-5';
+  var answerSpan5 = document.createElement( 'div' );
+  answerSpan5.id = 'div-PP-5';
+  answerSpan5.className = 'PrincPart';
   return answerSpan5;
 }
 
 helpers.answerSpan6 = function() {
-  var answerSpan6 = document.createElement( 'span' );
-  answerSpan6.id = 'span-PP-6';
+  var answerSpan6 = document.createElement( 'div' );
+  answerSpan6.id = 'div-PP-6';
+  answerSpan6.className = 'PrincPart';
   return answerSpan6;
 }
 

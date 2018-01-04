@@ -22,7 +22,7 @@ view.showVerb = function() {
     // model.randomizeVerb();
 
     var fieldSet = helpers.getFieldSet();
-    fieldSet.innerHTML = "";
+    // fieldSet.innerHTML = "";
 
     const legendEl = document.createElement( 'legend' );
     const spanEl = document.createElement( 'span' );

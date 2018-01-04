@@ -16,26 +16,7 @@ controller.init = function() {
   controller.userResetQuiz();
 }
 
-  /**
-    *
-    * Listens for USER to click SUBMIT
-    *
-    */
-controller.userSubmitQuiz = function() {
-  var sbmt = helpers.getSubmitButton();
-  sbmt.addEventListener('click', controller.getUserInput, false);
-}
 
-/**
-  *
-  * Listens for USER to click RESET VERB
-  *
-  */
-
-controller.userResetQuiz = function() {
-  var reset = helpers.getResetButton();
-  reset.addEventListener('click', principalPartsQuiz.init, false);
-}
 
 
 /**
@@ -58,11 +39,11 @@ controller.getUserInput = function() {
       this.stuff = allInputs;
       // console.log(this.stuff);
 
-      var answersArray = model.allAnswers;
-
-      answersArray.forEach( function(ans) {
-        
-      } );
+       var answersArray = model.allAnswers;
+      //
+      // answersArray.forEach( function(ans) {
+      //
+      // } );
 
       for (var i = 0, max = answersArray.length; i < max; i++) {
 
@@ -95,6 +76,27 @@ controller.getUserInput = function() {
 
 
     }
+
+    /**
+      *
+      * Listens for USER to click SUBMIT
+      *
+      */
+  controller.userSubmitQuiz = function() {
+    var sbmt = helpers.getSubmitButton();
+    sbmt.addEventListener('click', controller.getUserInput, false);
+  }
+
+  /**
+    *
+    * Listens for USER to click RESET VERB
+    *
+    */
+
+  controller.userResetQuiz = function() {
+    var reset = helpers.getResetButton();
+    reset.addEventListener('click', principalPartsQuiz.init, false);
+  }
 
     /**
       *

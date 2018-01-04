@@ -1,0 +1,10 @@
+{
+  "name": "grunt-setup",
+  "version": "0.1.0",
+  "description": "Trying grunt for the first time in a project",
+  "author": "Tom Cox",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}

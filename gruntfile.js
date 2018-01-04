@@ -1,0 +1,30 @@
+ module.exports = function( grunt ) {
+
+  var defaults = {
+    js: ['js/data.js',
+        'js/helpers.js',
+        'js/model.js',
+        'js/view.js',
+        'js/controller.js',
+        'js/app.js']
+  };
+
+  grunt.initConfig({
+      pkg: grunt.file.readJSON('package.json'),
+
+      concat: {
+        options: {
+          separator: ';'
+        },
+        dist: {
+          src: [defaults.js],
+          dest: 'dist/js/bundle.js'
+        }
+      }
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  grunt.registerTask('default', ['concat']);
+
+};

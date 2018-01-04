@@ -5,7 +5,7 @@
 *
 */
 
-body {
+.pp-container {
   font-family: 'Cardo', serif;
   height: 100vh;
   /*background-image: url(typewriter_on_desk.jpg);
@@ -39,7 +39,7 @@ img#gamma-logo {
   justify-content: center;
 }
 
-fieldset  {
+#quiz-field  {
   max-width: 1300px;
   background-color: #efefef;
   padding: 1.5em;

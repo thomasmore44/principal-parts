@@ -1,688 +1,679 @@
   var verbs = [
  {
    "English": "announce",
-   "FirstPP": "ἀγγέλλω",
-   "SecondPP": "ἀγγελῶ",
-   "ThirdPP": "ἤγγειλα",
-   "FourthPP": "ἤγγελκα",
-   "FifthPP": "ἤγγελμαι",
-   "SixthPP": "ἠγγέλθην"
+   "1stPP": "ἀγγέλλω",
+   "2ndPP": "ἀγγελῶ",
+   "3rdPP": "ἤγγειλα",
+   "4thPP": "ἤγγελκα",
+   "5thPP": "ἤγγελμαι",
+   "6thPP": "ἠγγέλθην"
  },
  {
    "English": "lead",
-   "FirstPP": "ἄγω",
-   "SecondPP": "ἄξω",
-   "ThirdPP": "ἤγαγον",
-   "FourthPP": "ἦχα",
-   "FifthPP": "ἦγμαι",
-   "SixthPP": "ἤχθην"
+   "1stPP": "ἄγω",
+   "2ndPP": "ἄξω",
+   "3rdPP": "ἤγαγον",
+   "4thPP": "ἦχα",
+   "5thPP": "ἦγμαι",
+   "6thPP": "ἤχθην"
  },
  {
    "English": "choose",
-   "FirstPP": "αἱρέω",
-   "SecondPP": "αἱρήσω",
-   "ThirdPP": "εἷλον",
-   "FourthPP": "ᾕρηκα",
-   "FifthPP": "ᾕρημαι",
-   "SixthPP": "ᾑρέθην"
+   "1stPP": "αἱρέω",
+   "2ndPP": "αἱρήσω",
+   "3rdPP": "εἷλον",
+   "4thPP": "ᾕρηκα",
+   "5thPP": "ᾕρημαι",
+   "6thPP": "ᾑρέθην"
  },
  {
    "English": "raise",
-   "FirstPP": "αἴρω",
-   "SecondPP": "ἀρῶ",
-   "ThirdPP": "ἦρα",
-   "FourthPP": "ἦρκα",
-   "FifthPP": "ἦρμαι",
-   "SixthPP": "ἤρθην"
+   "1stPP": "αἴρω",
+   "2ndPP": "ἀρῶ",
+   "3rdPP": "ἦρα",
+   "4thPP": "ἦρκα",
+   "5thPP": "ἦρμαι",
+   "6thPP": "ἤρθην"
  },
  {
    "English": "perceive",
-   "FirstPP": "αἰσθάνομαι",
-   "SecondPP": "αἰσθήσομαι",
-   "ThirdPP": "ᾐσθόμην",
-   "FourthPP": "",
-   "FifthPP": "ᾔσθημαι",
-   "SixthPP": ""
+   "1stPP": "αἰσθάνομαι",
+   "2ndPP": "αἰσθήσομαι",
+   "3rdPP": "ᾐσθόμην",
+   "4thPP": "------",
+   "5thPP": "ᾔσθημαι",
+   "6thPP": "------"
  },
  {
    "English": "hear",
-   "FirstPP": "ἀκούω",
-   "SecondPP": "ἀκούσομαι",
-   "ThirdPP": "ἤκουσα",
-   "FourthPP": "ἀκήκοα",
-   "FifthPP": "",
-   "SixthPP": "ἠκούσθην"
+   "1stPP": "ἀκούω",
+   "2ndPP": "ἀκούσομαι",
+   "3rdPP": "ἤκουσα",
+   "4thPP": "ἀκήκοα",
+   "5thPP": "------",
+   "6thPP": "ἠκούσθην"
  },
  {
    "English": "be captured",
-   "FirstPP": "ἁλίσκομαι",
-   "SecondPP": "ἁλώσομαι",
-   "ThirdPP": "ἑάλων",
-   "FourthPP": "ἑάλωκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἁλίσκομαι",
+   "2ndPP": "ἁλώσομαι",
+   "3rdPP": "ἑάλων",
+   "4thPP": "ἑάλωκα",
+   "5thPP": "------",
+   "6thPP": "-------"
  },
  {
    "English": "die",
-   "FirstPP": "ἀποθνήσκω",
-   "SecondPP": "ἀποθανοῦμαι",
-   "ThirdPP": "ἀπέθανον",
-   "FourthPP": "τέθνηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἀποθνήσκω",
+   "2ndPP": "ἀποθανοῦμαι",
+   "3rdPP": "ἀπέθανον",
+   "4thPP": "τέθνηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "kill",
-   "FirstPP": "ἀποκτείνω",
-   "SecondPP": "ἀποκτενῶ",
-   "ThirdPP": "ἀπέκτεινα",
-   "FourthPP": "ἀπέκτονα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἀποκτείνω",
+   "2ndPP": "ἀποκτενῶ",
+   "3rdPP": "ἀπέκτεινα",
+   "4thPP": "ἀπέκτονα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "destroy",
-   "FirstPP": "ἀπόλλυμι",
-   "SecondPP": "ἀπολῶ",
-   "ThirdPP": "ἀπώλεσα",
-   "FourthPP": "ἀπολώλεκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἀπόλλυμι",
+   "2ndPP": "ἀπολῶ",
+   "3rdPP": "*ἀπώλεσα",
+   "4thPP": "ἀπολώλεκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "seize",
-   "FirstPP": "ἁρπάζω",
-   "SecondPP": "ἁρπάσομαι",
-   "ThirdPP": "ἥρπασα",
-   "FourthPP": "ἥρπακα",
-   "FifthPP": "ἥρπασμαι",
-   "SixthPP": "ἡρπάσθην"
+   "1stPP": "ἁρπάζω",
+   "2ndPP": "ἁρπάσομαι",
+   "3rdPP": "ἥρπασα",
+   "4thPP": "ἥρπακα",
+   "5thPP": "ἥρπασμαι",
+   "6thPP": "ἡρπάσθην"
  },
  {
    "English": "rule, begin",
-   "FirstPP": "ἄρχω",
-   "SecondPP": "ἄρξω",
-   "ThirdPP": "ἦρξα",
-   "FourthPP": "ἦρχα",
-   "FifthPP": "ἦργμαι",
-   "SixthPP": "ἤρχθην"
+   "1stPP": "ἄρχω",
+   "2ndPP": "ἄρξω",
+   "3rdPP": "ἦρξα",
+   "4thPP": "ἦρχα",
+   "5thPP": "ἦργμαι",
+   "6thPP": "ἤρχθην"
  },
  {
    "English": "arrive",
-   "FirstPP": "ἀφικνέομαι",
-   "SecondPP": "ἀφίξομαι",
-   "ThirdPP": "ἀφικόμην",
-   "FourthPP": "",
-   "FifthPP": "ἀφῖγμαι",
-   "SixthPP": ""
+   "1stPP": "ἀφικνέομαι",
+   "2ndPP": "ἀφίξομαι",
+   "3rdPP": "ἀφικόμην",
+   "4thPP": "------",
+   "5thPP": "ἀφῖγμαι",
+   "6thPP": "------"
  },
  {
    "English": "go",
-   "FirstPP": "βαίνω",
-   "SecondPP": "βήσομαι",
-   "ThirdPP": "ἔβην",
-   "FourthPP": "βέβηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "βαίνω",
+   "2ndPP": "βήσομαι",
+   "3rdPP": "ἔβην",
+   "4thPP": "βέβηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "throw; pelt",
-   "FirstPP": "βάλλω",
-   "SecondPP": "βαλῶ",
-   "ThirdPP": "ἔβαλον",
-   "FourthPP": "βέβληκα",
-   "FifthPP": "βέβλημαι",
-   "SixthPP": "ἐβλήθην"
+   "1stPP": "βάλλω",
+   "2ndPP": "βαλῶ",
+   "3rdPP": "ἔβαλον",
+   "4thPP": "βέβληκα",
+   "5thPP": "βέβλημαι",
+   "6thPP": "ἐβλήθην"
  },
  {
    "English": "harm",
-   "FirstPP": "βλάπτω",
-   "SecondPP": "βλάψω",
-   "ThirdPP": "ἔβλαψα",
-   "FourthPP": "βέβλαφα",
-   "FifthPP": "βέβλαμμαι",
-   "SixthPP": ["ἐβλάφθην", "ἐβλάβην"]
+   "1stPP": "βλάπτω",
+   "2ndPP": "βλάψω",
+   "3rdPP": "ἔβλαψα",
+   "4thPP": "βέβλαφα",
+   "5thPP": "βέβλαμμαι",
+   "6thPP": ["ἐβλάφθην", "ἐβλάβην" ]
  },
  {
    "English": "wish",
-   "FirstPP": "βούλομαι",
-   "SecondPP": "βουλήσομαι",
-   "ThirdPP": "",
-   "FourthPP": "",
-   "FifthPP": "βεβούλημαι",
-   "SixthPP": "ἐβουλήθην"
+   "1stPP": "βούλομαι",
+   "2ndPP": "βουλήσομαι",
+   "3rdPP": "------",
+   "4thPP": "------",
+   "5thPP": "βεβούλημαι",
+   "6thPP": "ἐβουλήθην"
  },
  {
    "English": "wed",
-   "FirstPP": "γαμέω",
-   "SecondPP": "γαμῶ",
-   "ThirdPP": "ἔγημα",
-   "FourthPP": "γεγάμηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "γαμέω",
+   "2ndPP": "γαμῶ",
+   "3rdPP": "ἔγημα",
+   "4thPP": "γεγάμηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "become, be",
-   "FirstPP": "γίγνομαι",
-   "SecondPP": "γενήσομαι",
-   "ThirdPP": "ἐγενόμην",
-   "FourthPP": "γέγονα",
-   "FifthPP": "γεγένημαι",
-   "SixthPP": ""
+   "1stPP": "γίγνομαι",
+   "2ndPP": "γενήσομαι",
+   "3rdPP": "ἐγενόμην",
+   "4thPP": "γέγονα",
+   "5thPP": "γεγένημαι",
+   "6thPP": "-------"
  },
  {
    "English": "know",
-   "FirstPP": "γιγνώσκω",
-   "SecondPP": "γνώσομαι",
-   "ThirdPP": "ἔγνων",
-   "FourthPP": "ἔγνωκα",
-   "FifthPP": "ἔγνοσμαι",
-   "SixthPP": "ἐγνώσθην"
+   "1stPP": "γιγνώσκω",
+   "2ndPP": "γνώσομαι",
+   "3rdPP": "ἔγνων",
+   "4thPP": "ἔγνωκα",
+   "5thPP": "ἔγνοσμαι",
+   "6thPP": "ἐγνώσθην"
  },
  {
    "English": "write",
-   "FirstPP": "γράφω",
-   "SecondPP": "γράψω",
-   "ThirdPP": "ἔγραψα",
-   "FourthPP": "γέγραφα",
-   "FifthPP": "γέγραμμαι",
-   "SixthPP": "ἐγράφην"
+   "1stPP": "γράφω",
+   "2ndPP": "γράψω",
+   "3rdPP": "ἔγραψα",
+   "4thPP": "γέγραφα",
+   "5thPP": "γέγραμμαι",
+   "6thPP": "ἐγραφην"
  },
  {
-   "English": " show",
-   "FirstPP": "δείκνυμι",
-   "SecondPP": "δείξω",
-   "ThirdPP": "ἔδειξα",
-   "FourthPP": "δέδειχα",
-   "FifthPP": "δέδειγμαι",
-   "SixthPP": "ἐδείχθην"
+   "English": "show",
+   "1stPP": "δείκνυμι",
+   "2ndPP": "δείξω",
+   "3rdPP": "ἔδειξα",
+   "4thPP": "δέδειχα",
+   "5thPP": "δέδειγμαι",
+   "6thPP": "ἐδείχθην"
  },
  {
    "English": "give",
-   "FirstPP": "δίδωμι",
-   "SecondPP": "δώσω",
-   "ThirdPP": "ἔδωκα",
-   "FourthPP": "δέδωκα",
-   "FifthPP": "δέδομαι",
-   "SixthPP": "ἐδόθην"
+   "1stPP": "δίδωμι",
+   "2ndPP": "δώσω",
+   "3rdPP": "ἔδωκα",
+   "4thPP": "δέδωκα",
+   "5thPP": "δέδομαι",
+   "6thPP": "ἐδόθην"
  },
  {
    "English": "seem, think",
-   "FirstPP": "δοκέω",
-   "SecondPP": "δόξω",
-   "ThirdPP": "ἔδοξα",
-   "FourthPP": "",
-   "FifthPP": "δέδογμαι",
-   "SixthPP": ""
+   "1stPP": "δοκέω",
+   "2ndPP": "δόξω",
+   "3rdPP": "ἔδοξα",
+   "4thPP": "------",
+   "5thPP": "δέδογμαι",
+   "6thPP": "------"
  },
  {
    "English": "go down",
-   "FirstPP": "δύω",
-   "SecondPP": "δύσω",
-   "ThirdPP": "ἔδυσα",
-   "FourthPP": "δέδυκα",
-   "FifthPP": "δέδυμαι",
-   "SixthPP": ["ἐδύθην", "ἔδυν" ]
+   "1stPP": "δύω",
+   "2ndPP": "δύσω",
+   "3rdPP": "ἔδυσα",
+   "4thPP": "δέδυκα",
+   "5thPP": "δέδυμαι",
+   "6thPP": ["ἔδυν", "ἐδύθην"]
  },
  {
    "English": "to be",
-   "FirstPP": "εἰμί",
-   "SecondPP": "ἔσομαι",
-   "ThirdPP": "",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "εἰμί",
+   "2ndPP": "ἔσομαι",
+   "3rdPP": "------",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to go",
-   "FirstPP": "εἶμι",
-   "SecondPP": "",
-   "ThirdPP": "",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "εἶμι",
+   "2ndPP": "------",
+   "3rdPP": "------",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to drive, march",
-   "FirstPP": "ἐλαύνω",
-   "SecondPP": "ἐλῶ",
-   "ThirdPP": "ἤλασα",
-   "FourthPP": "ἐλήλακα",
-   "FifthPP": "ἐλήλαμαι",
-   "SixthPP": "ἐλάθην"
+   "1stPP": "ἐλαύνω",
+   "2ndPP": "ἐλῶ",
+   "3rdPP": "ἤλασα",
+   "4thPP": "ἐλήλακα",
+   "5thPP": "ἐλήλαμαι",
+   "6thPP": "ἐλάθην"
  },
  {
    "English": "to follow",
-   "FirstPP": "ἕπομαι",
-   "SecondPP": "ἕψομαι",
-   "ThirdPP": "ἑσπόμην",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἕπομαι",
+   "2ndPP": "ἕψομαι",
+   "3rdPP": "ἑσπόμην",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to come, go",
-   "FirstPP": "ἔρχομαι",
-   "SecondPP": "ἐλεύσομαι",
-   "ThirdPP": "ἦλθον",
-   "FourthPP": "ἐλήλυθα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἔρχομαι",
+   "2ndPP": "ἐλεύσομαι",
+   "3rdPP": "ἦλθον",
+   "4thPP": "ἐλήλυθα",
+   "5thPP": "",
+   "6thPP": ""
  },
  {
    "English": "to eat",
-   "FirstPP": "ἐσθίω",
-   "SecondPP": "ἔδομαι",
-   "ThirdPP": "ἔφαγον",
-   "FourthPP": "ἐδήδοκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἐσθίω",
+   "2ndPP": "ἔδομαι",
+   "3rdPP": "ἔφαγον",
+   "4thPP": "ἐδήδοκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to find",
-   "FirstPP": "εὑρίσκω",
-   "SecondPP": "εὑρήσω",
-   "ThirdPP": "ηὗρον",
-   "FourthPP": "ηὕρηκα",
-   "FifthPP": "ηὕρημαι",
-   "SixthPP": "εὑρέθην"
+   "1stPP": "εὑρίσκω",
+   "2ndPP": "εὑρήσω",
+   "3rdPP": "ηὗρον",
+   "4thPP": "ηὕρηκα",
+   "5thPP": "ηὕρημαι",
+   "6thPP": "εὑρέθην"
  },
  {
    "English": "to have, hold",
-   "FirstPP": "ἔχω",
-   "SecondPP": ["ἕξω", "σχήσω"],
-   "ThirdPP": "ἔσχον",
-   "FourthPP": "ἔσχηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ἔχω",
+   "2ndPP": "ἕξω",
+   "3rdPP": ["ἔσχον", "σχήσω"],
+   "4thPP": "ἔσχηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to send, throw",
-   "FirstPP": "ἵημι",
-   "SecondPP": "ἥσω",
-   "ThirdPP": "ἦκα",
-   "FourthPP": "εἷκα",
-   "FifthPP": "εἷμαι",
-   "SixthPP": "εἵθην"
+   "1stPP": "ἵημι",
+   "2ndPP": "ἥσω",
+   "3rdPP": "ἦκα",
+   "4thPP": "εἷκα",
+   "5thPP": "εἷμαι",
+   "6thPP": "εἵθην"
  },
  {
    "English": "to stand",
-   "FirstPP": "ἵστημι",
-   "SecondPP": "στήσω",
-   "ThirdPP": ["ἔστησα", "ἔστην"],
-   "FourthPP": "ἕστηκα",
-   "FifthPP": "ἕσταμαι",
-   "SixthPP": "ἐσάθην"
+   "1stPP": "ἵστημι",
+   "2ndPP": "στήσω",
+   "3rdPP": ["ἔστησα", "ἔστην"],
+   "4thPP": "ἕστηκα",
+   "5thPP": "ἕσταμαι",
+   "6thPP": "ἐσάθην"
  },
  {
    "English": "to burn",
-   "FirstPP": ["καίω", "κάω"],
-   "SecondPP": "καύσω",
-   "ThirdPP": "ἔκαυσα",
-   "FourthPP": "κέκαυκα",
-   "FifthPP": "κέκαυμαι",
-   "SixthPP": "ἐκαύθην"
+   "1stPP": ["καίω", "κάω"],
+   "2ndPP": "καύσω",
+   "3rdPP": "ἔκαυσα",
+   "4thPP": "κέκαυκα",
+   "5thPP": "κέκαυμαι",
+   "6thPP": "ἐκαύθην"
  },
  {
    "English": "to call",
-   "FirstPP": "καλέω",
-   "SecondPP": "καλῶ",
-   "ThirdPP": "ἐκάλεσα",
-   "FourthPP": "κέκληκα",
-   "FifthPP": "κέκλημαι",
-   "SixthPP": "ἐκλήθην"
+   "1stPP": "καλέω",
+   "2ndPP": "καλῶ",
+   "3rdPP": "ἐκάλεσα",
+   "4thPP": "κέκληκα",
+   "5thPP": "κέκλημαι",
+   "6thPP": "ἐκλήθην"
  },
  {
    "English": "to cut",
-   "FirstPP": "κόπτω",
-   "SecondPP": "κόψω",
-   "ThirdPP": "ἔκοψα",
-   "FourthPP": "κέκοφα",
-   "FifthPP": "κέκομμαι",
-   "SixthPP": "ἐκόπην"
+   "1stPP": "κόπτω",
+   "2ndPP": "κόψω",
+   "3rdPP": "ἔκοψα",
+   "4thPP": "κέκοφα",
+   "5thPP": "κέκομμαι",
+   "6thPP": "ἐκόπην"
  },
  {
    "English": "to take",
-   "FirstPP": "λαμβάνω",
-   "SecondPP": "λήψομαι",
-   "ThirdPP": "ἔλαβον",
-   "FourthPP": "εἴληφα",
-   "FifthPP": "εἴλημμαι",
-   "SixthPP": "ἐλήφθην"
+   "1stPP": "λαμβάνω",
+   "2ndPP": "λήψομαι",
+   "3rdPP": "ἔλαβον",
+   "4thPP": "εἴληφα",
+   "5thPP": "εἴλημμαι",
+   "6thPP": "ἐλήφθην"
  },
  {
    "English": "to escape notice; (mid.) forget",
-   "FirstPP": "λανθάνω",
-   "SecondPP": "λήσω",
-   "ThirdPP": "ἔλαθον",
-   "FourthPP": "λέληθα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "λανθάνω",
+   "2ndPP": "λήσω",
+   "3rdPP": "ἔλαθον",
+   "4thPP": "λέληθα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to say",
-   "FirstPP": "λέγω",
-   "SecondPP": "λέξω",
-   "ThirdPP": "ἔλεξα",
-   "FourthPP": "εἴρηκα",
-   "FifthPP": "λέλεγμαι",
-   "SixthPP": "ἐλέχθην"
+   "1stPP": "λέγω",
+   "2ndPP": "λέξω",
+   "3rdPP": "ἔλεξα",
+   "4thPP": "εἴρηκα",
+   "5thPP": "λέλεγμαι",
+   "6thPP": "ἐλέχθην"
  },
  {
    "English": "to collect",
-   "FirstPP": "λέγω",
-   "SecondPP": "λέξω",
-   "ThirdPP": "ἔλεξα",
-   "FourthPP": "εἴλοχα",
-   "FifthPP": "εἴλεγμαι",
-   "SixthPP": "ἐλέχθην"
+   "1stPP": "λέγω",
+   "2ndPP": "λέξω",
+   "3rdPP": "ἔλεξα",
+   "4thPP": "εἴλοχα",
+   "5thPP": "εἴλεγμαι",
+   "6thPP": "ἐλέχθην"
  },
  {
    "English": "to leave",
-   "FirstPP": "λείπω",
-   "SecondPP": "λείψω",
-   "ThirdPP": "ἔλιπον",
-   "FourthPP": "λέλοιπα",
-   "FifthPP": "λέλειμμαι",
-   "SixthPP": "ἐλείφθην"
+   "1stPP": "λείπω",
+   "2ndPP": "λείψω",
+   "3rdPP": "ἔλιπον",
+   "4thPP": "λέλοιπα",
+   "5thPP": "λέλειμμαι",
+   "6thPP": "ἐλείφθην"
  },
  {
    "English": "to learn",
-   "FirstPP": "μανθάνω",
-   "SecondPP": "μαθήσομαι",
-   "ThirdPP": "ἔμαθον",
-   "FourthPP": "μεμάθηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "μανθάνω",
+   "2ndPP": "μαθήσομαι",
+   "3rdPP": "ἔμαθον",
+   "4thPP": "μεμάθηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to fight",
-   "FirstPP": "μάχομαι",
-   "SecondPP": "μαχοῦμαι",
-   "ThirdPP": "ἐμαχησάμην",
-   "FourthPP": "μεμάχημαι",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "μάχομαι",
+   "2ndPP": "μαχοῦμαι",
+   "3rdPP": "ἐμαχησάμην",
+   "4thPP": "μεμάχημαι",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "be a concern (impersonal)",
-   "FirstPP": "μέλει",
-   "SecondPP": "μελήσει",
-   "ThirdPP": "ἐμέλησε",
-   "FourthPP": "μεμέληκε",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "μέλει",
+   "2ndPP": "μελήσει",
+   "3rdPP": "ἐμέλησε",
+   "4thPP": "μεμέληκε",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to intend, be about to",
-   "FirstPP": "μέλλω",
-   "SecondPP": "μελλήσω",
-   "ThirdPP": "ἐμέλλησα",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "μέλλω",
+   "2ndPP": "μελλήσω",
+   "3rdPP": "ἐμέλλησα",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to remain",
-   "FirstPP": "μένω",
-   "SecondPP": "μενῶ",
-   "ThirdPP": "ἔμεινα",
-   "FourthPP": "μεμένηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "μένω",
+   "2ndPP": "μενῶ",
+   "3rdPP": "ἔμεινα",
+   "4thPP": "μεμένηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to remind; (mid.) remember",
-   "FirstPP": "μιμνήσκω",
-   "SecondPP": "μνήσω",
-   "ThirdPP": "ἔμνησα",
-   "FourthPP": "",
-   "FifthPP": "μέμνημαι",
-   "SixthPP": "ἐμνήσθην"
+   "1stPP": "μιμνήσκω",
+   "2ndPP": "μνήσω",
+   "3rdPP": "ἔμνησα",
+   "4thPP": "------",
+   "5thPP": "μέμνημαι",
+   "6thPP": "ἐμνήσθην"
  },
  {
    "English": "to believe, think",
-   "FirstPP": "νομίζω",
-   "SecondPP": "νομιῶ",
-   "ThirdPP": "ἐνόμισα",
-   "FourthPP": "νενόμικα",
-   "FifthPP": "νενόμισμαι",
-   "SixthPP": "ἐνομίσθην"
+   "1stPP": "νομίζω",
+   "2ndPP": "νομιῶ",
+   "3rdPP": "ἐνόμισα",
+   "4thPP": "νενόμικα",
+   "5thPP": "νενόμισμαι",
+   "6thPP": "ἐνομίσθην"
  },
  {
    "English": "to think",
-   "FirstPP": "οἴομαι",
-   "SecondPP": "οἰήσομαι",
-   "ThirdPP": "",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": "ᾠήθην"
- },
- {
-   "English": "",
-   "FirstPP": "οἶμαι",
-   "SecondPP": "",
-   "ThirdPP": "",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": ["οἴομαι", "οἶμαι"],
+   "2ndPP": "οἰήσομαι",
+   "3rdPP": "------",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "ᾠήθην"
  },
  {
    "English": "to see",
-   "FirstPP": "ὁράω",
-   "SecondPP": "ὄψομαι",
-   "ThirdPP": "εἶδον",
-   "FourthPP": ["ἑόρακα", "ἑώρακα"],
-   "FifthPP": ["ἑώραμαι", "ὦμμαι"],
-   "SixthPP": "ὤφθην"
+   "1stPP": "ὁράω",
+   "2ndPP": "ὄψομαι",
+   "3rdPP": "εἶδον",
+   "4thPP": ["ἑόρακα", "ἑώρακα"],
+   "5thPP": ["ἑώραμαι", "ὦμμαι"],
+   "6thPP": "ὤφθην"
  },
  {
    "English": "to suffer",
-   "FirstPP": "πάσχω",
-   "SecondPP": "πείσομαι",
-   "ThirdPP": "ἔπαθον",
-   "FourthPP": "πέπονθα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "πάσχω",
+   "2ndPP": "πείσομαι",
+   "3rdPP": "ἔπαθον",
+   "4thPP": "πέπονθα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to persuade; (mid.) believe, obey; (2nd perf.) trust",
-   "FirstPP": "πείθω",
-   "SecondPP": "πείσω",
-   "ThirdPP": "ἔπεισα",
-   "FourthPP": ["πέπεικα", "πέποιθα"],
-   "FifthPP": "πέπεισμαι",
-   "SixthPP": "ἐπείσθην"
+   "1stPP": "πείθω",
+   "2ndPP": "πείσω",
+   "3rdPP": "ἔπεισα",
+   "4thPP": ["πέπεικα", "πέποιθα"],
+   "5thPP": "πέπεισμαι",
+   "6thPP": "ἐπείσθην"
  },
  {
    "English": "to send",
-   "FirstPP": "πέμπω",
-   "SecondPP": "πέμψω",
-   "ThirdPP": "ἔπεμψα",
-   "FourthPP": "πέπομφα",
-   "FifthPP": "πέπεμμαι",
-   "SixthPP": "ἐπέμφθην"
+   "1stPP": "πέμπω",
+   "2ndPP": "πέμψω",
+   "3rdPP": "ἔπεμψα",
+   "4thPP": "πέπομφα",
+   "5thPP": "πέπεμμαι",
+   "6thPP": "ἐπέμφθην"
  },
  {
    "English": "to drink",
-   "FirstPP": "πίνω",
-   "SecondPP": ["πίομαι", "πιοῦμαι"],
-   "ThirdPP": "ἔπιον",
-   "FourthPP": "πέπωκα",
-   "FifthPP": "πέπομαι",
-   "SixthPP": "ἐπόθην"
+   "1stPP": "πίνω",
+   "2ndPP": ["πίομαι", "πιοῦμαι"],
+   "3rdPP": "ἔπιον",
+   "4thPP": "πέπωκα",
+   "5thPP": "πέπομαι",
+   "6thPP": "ἐπόθην"
  },
  {
    "English": "to fall",
-   "FirstPP": "πίπτω",
-   "SecondPP": "πεσοῦμαι",
-   "ThirdPP": "ἔπεσον",
-   "FourthPP": "πέπτωκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "πίπτω",
+   "2ndPP": "πεσοῦμαι",
+   "3rdPP": "ἔπεσον",
+   "4thPP": "πέπτωκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to sail",
-   "FirstPP": "πλέω",
-   "SecondPP": ["πλεύσομαι", "πλευσοῦμαι"],
-   "ThirdPP": "ἔπλευσα",
-   "FourthPP": "πέπλευκα",
-   "FifthPP": "πέπλευσμαι",
-   "SixthPP": "ἐπλεύσθην"
+   "1stPP": "πλέω",
+   "2ndPP": ["πλεύσομαι", "πλευσοῦμαι"],
+   "3rdPP": "ἔπλευσα",
+   "4thPP": "πέπλευκα",
+   "5thPP": "πέπλευσμαι",
+   "6thPP": "ἐπλεύσθην"
  },
  {
    "English": "to do",
-   "FirstPP": "πράττω",
-   "SecondPP": "πράξω",
-   "ThirdPP": "ἔπραξα",
-   "FourthPP": "πέπραχα",
-   "FifthPP": "πέπραγμαι",
-   "SixthPP": "ἐπράχθην"
+   "1stPP": "πράττω",
+   "2ndPP": "πράξω",
+   "3rdPP": "ἔπραξα",
+   "4thPP": "πέπραχα",
+   "5thPP": "πέπραγμαι",
+   "6thPP": "ἐπράχθην"
  },
  {
    "English": "to learn, inquire",
-   "FirstPP": "πυνθάνομαι",
-   "SecondPP": "πεύσομαι",
-   "ThirdPP": "ἐπυθόμην",
-   "FourthPP": "",
-   "FifthPP": "πέπυσμαι",
-   "SixthPP": ""
+   "1stPP": "πυνθάνομαι",
+   "2ndPP": "πεύσομαι",
+   "3rdPP": "ἐπυθόμην",
+   "4thPP": "------",
+   "5thPP": "πέπυσμαι",
+   "6thPP": "------"
  },
  {
    "English": "to scatter",
-   "FirstPP": "σκεδάννυμι",
-   "SecondPP": "σκεδῶ",
-   "ThirdPP": "ἐσκέδασα",
-   "FourthPP": "",
-   "FifthPP": "ἐσκέδασμαι",
-   "SixthPP": "ἐσκεδάσθην"
+   "1stPP": "σκεδάννυμι",
+   "2ndPP": "σκεδῶ",
+   "3rdPP": "ἐσκέδασα",
+   "4thPP": "------",
+   "5thPP": "ἐσκέδασμαι",
+   "6thPP": "ἐσκεδάσθην"
  },
  {
    "English": "to turn",
-   "FirstPP": "στρέφω",
-   "SecondPP": "στρέψω",
-   "ThirdPP": "ἔστρεψα",
-   "FourthPP": "",
-   "FifthPP": "ἔστραμμαι",
-   "SixthPP": ["ἐστρέφθην", "ἐστράφην"]
+   "1stPP": "στρέφω",
+   "2ndPP": "στρέψω",
+   "3rdPP": "ἔστρεψα",
+   "4thPP": "------",
+   "5thPP": "ἔστραμμαι",
+   "6thPP": ["ἐστρέφθην", "ἐστράφην"]
  },
  {
    "English": "to arrange, draw up",
-   "FirstPP": "τάττω",
-   "SecondPP": "τάξω",
-   "ThirdPP": "ἔταξα",
-   "FourthPP": "τέταχα",
-   "FifthPP": "τέταγμαι",
-   "SixthPP": "ἐτάχθην"
+   "1stPP": "τάττω",
+   "2ndPP": "τάξω",
+   "3rdPP": "ἔταξα",
+   "4thPP": "τέταχα",
+   "5thPP": "τέταγμαι",
+   "6thPP": "ἐτάχθην"
  },
  {
    "English": "to cut",
-   "FirstPP": "τέμνω",
-   "SecondPP": "τεμῶ",
-   "ThirdPP": "ἔτεμον",
-   "FourthPP": "τέτμηκα",
-   "FifthPP": "τέτμημαι",
-   "SixthPP": "ἐτμήθην"
+   "1stPP": "τέμνω",
+   "2ndPP": "τεμῶ",
+   "3rdPP": "ἔτεμον",
+   "4thPP": "τέτμηκα",
+   "5thPP": "τέτμημαι",
+   "6thPP": "ἐτμήθην"
  },
  {
    "English": "to place, put",
-   "FirstPP": "τίθημι",
-   "SecondPP": "θήσω",
-   "ThirdPP": "ἔθηκα",
-   "FourthPP": "τέθηκα",
-   "FifthPP": "τέθειμαι",
-   "SixthPP": "ἐτέθην"
+   "1stPP": "τίθημι",
+   "2ndPP": "θήσω",
+   "3rdPP": "ἔθηκα",
+   "4thPP": "τέθηκα",
+   "5thPP": "τέθειμαι",
+   "6thPP": "ἐτέθην"
  },
  {
    "English": "to beget, bring forth",
-   "FirstPP": "τίκτω",
-   "SecondPP": "τέξομαι",
-   "ThirdPP": "ἔτεκον",
-   "FourthPP": "τέτοκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "τίκτω",
+   "2ndPP": "τέξομαι",
+   "3rdPP": "ἔτεκον",
+   "4thPP": "τέτοκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to turn; (mid.) to flee",
-   "FirstPP": "τρέπω",
-   "SecondPP": "τρέψω",
-   "ThirdPP": "ἔτρεψα",
-   "FourthPP": "τέτροφα",
-   "FifthPP": "τέτραμμαι",
-   "SixthPP": ["ἐτρέφθην", "ἐτράπην"]
+   "1stPP": "τρέπω",
+   "2ndPP": "τρέψω",
+   "3rdPP": "ἔτρεψα",
+   "4thPP": "τέτροφα",
+   "5thPP": "τέτραμμαι",
+   "6thPP": ["ἐτρέφθην", "ἐτράπην"]
  },
  {
    "English": "to support, nourish",
-   "FirstPP": "τρέφω",
-   "SecondPP": "θρέψω",
-   "ThirdPP": "ἔθρεψα",
-   "FourthPP": "τέτροφα",
-   "FifthPP": "τέθραμμαι",
-   "SixthPP": ["ἐθρέφθην", "ἐτράφην"]
+   "1stPP": "τρέφω",
+   "2ndPP": "θρέψω",
+   "3rdPP": "ἔθρεψα",
+   "4thPP": "τέτροφα",
+   "5thPP": "τέθραμμαι",
+   "6thPP": ["ἐθρέφθην", "ἐτράφην"]
  },
  {
    "English": "to run",
-   "FirstPP": "τρέχω",
-   "SecondPP": "δραμοῦμαι",
-   "ThirdPP": "ἔδραμον",
-   "FourthPP": "δεδράμηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "τρέχω",
+   "2ndPP": "δραμοῦμαι",
+   "3rdPP": "ἔδραμον",
+   "4thPP": "δεδράμηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to hit, happen, obtain",
-   "FirstPP": "τυγχάνω",
-   "SecondPP": "τεύξομαι",
-   "ThirdPP": "ἔτυχον",
-   "FourthPP": "τετύχηκα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "τυγχάνω",
+   "2ndPP": "τεύξομαι",
+   "3rdPP": "ἔτυχον",
+   "4thPP": "τετύχηκα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to promise",
-   "FirstPP": "ὑπισχνέομαι",
-   "SecondPP": "ὑποσχήσομαι",
-   "ThirdPP": "ὑπεσχόμην",
-   "FourthPP": "ὑπέσχημαι",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "ὑπισχνέομαι",
+   "2ndPP": "ὑποσχήσομαι",
+   "3rdPP": "ὑπεσχόμην",
+   "4thPP": "ὑπέσχημαι",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to show; (mid. 2nd perf and 2nd aor. Pass.) to appear",
-   "FirstPP": "φαίνω",
-   "SecondPP": "φανῶ",
-   "ThirdPP": "ἔφηνα",
-   "FourthPP": ["πέφαγκα", "πέφηνα"],
-   "FifthPP": "πέφασμαι",
-   "SixthPP": ["ἐφάνθην", "ἐφάνην"]
+   "1stPP": "φαίνω",
+   "2ndPP": "φανῶ",
+   "3rdPP": "ἔφηνα",
+   "4thPP": ["πέφαγκα", "πέφηνα"],
+   "5thPP": "πέφασμαι",
+   "6thPP": ["ἐφάνθην", "ἐφάνην"]
  },
  {
    "English": "to bear, carry",
-   "FirstPP": "φέρω",
-   "SecondPP": "οἴσω",
-   "ThirdPP": ["ἤνεγκα", "ἤνεγκον"],
-   "FourthPP": "ἐνήνοχα",
-   "FifthPP": "ἐνήνεγμαι",
-   "SixthPP": "ἠνέχθην"
+   "1stPP": "φέρω",
+   "2ndPP": "οἴσω",
+   "3rdPP": ["ἤνεγκα", "ἤνεγκον"],
+   "4thPP": "ἐνήνοχα",
+   "5thPP": "ἐνήνεγμαι",
+   "6thPP": "ἠνέχθην"
  },
  {
    "English": "to flee",
-   "FirstPP": "φεύγω",
-   "SecondPP": ["φεύξομαι", "φευξοῦμαι"],
-   "ThirdPP": "ἔφυγον",
-   "FourthPP": "πέφευγα",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "φεύγω",
+   "2ndPP": ["φεύξομαι", "φευξοῦμαι"],
+   "3rdPP": "ἔφυγον",
+   "4thPP": "πέφευγα",
+   "5thPP": "------",
+   "6thPP": "------"
  },
  {
    "English": "to say",
-   "FirstPP": "φημί",
-   "SecondPP": "φήσω",
-   "ThirdPP": "ἔφησα",
-   "FourthPP": "",
-   "FifthPP": "",
-   "SixthPP": ""
+   "1stPP": "φημί",
+   "2ndPP": "φήσω",
+   "3rdPP": "ἔφησα",
+   "4thPP": "------",
+   "5thPP": "------",
+   "6thPP": "------"
  }
-],
+]
 
 jsonData = JSON.stringify( verbs );

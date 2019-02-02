@@ -1335,8 +1335,8 @@ var principalPartsQuiz = {
     init: function() {
       model.init();
       // console.log(model.verb);
-      view.init();
       controller.init();
+      view.init();
     }
   }
 

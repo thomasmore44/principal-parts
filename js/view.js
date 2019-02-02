@@ -37,10 +37,10 @@ view.showVerb = function() {
 
     var english = model.verb.English;
 
-    // var fieldSet = helpers.createAnswerSpans();
+    var fieldSet = helpers.createAnswerSpans();
     var quizBody = helpers.getQuizBody();
 
-    // quizBody.removeChild( fieldSet );
+    quizBody.removeChild( fieldSet );
     quizBody.appendChild( fieldSet );
 
     var quizTitle = helpers.quizTitle();

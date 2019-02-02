@@ -20,11 +20,19 @@
           src: [defaults.js],
           dest: 'dist/js/bundle.js'
         }
+      },
+      uglify: {
+        dist: {
+          files: {
+            'dist/js/bundle.min.js' : '<%= concat.dist.dest %>'
+          }
+        }
       }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['concat']);
+  grunt.registerTask('default', ['concat', 'uglify']);
 
 };
